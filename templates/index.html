@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+ 
+    <!-- Events JS -->
+	<script type="text/javascript" src="{% static 'js/events.js' %}"></script>
+    <link href="{% static 'styles/calendar.css' %} " rel="stylesheet" type="text/css">
+
+
+          <!-- Content -->
+        <div class="container my-2" style="border: 1px solid black;">
+            <div class="row d-flex align-items-stretch scroll-wrapper" style="border: 1px solid black;"> 
+                <div class="col-md-8 col-sm-12 order-md-2 p-0 scroll-col" style="border: 1px solid black;">
+                    <div class="px-2 py-1 test-content">Graph
+                        <img src="{% static 'image/graph.png' %}" width="80%" height="70%" class="d-inline-block align-center" alt="Graph">
+                        <!-- <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Choose</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                    <p>Click on the button to open the dropdown menu, and use the input field to search for a specific dropdown link.</p>
+    
+                                 <div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                        <a href="#earthquake">Earthquake</a>
+                                        <a href="#pricehike">PriceHike</a>
+                                        <a href="#blockade">Blockade</a>
+                                        <a href="#political">Political</a>
+                                        <a href="#climate">Climate</a>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 order-md-1 scroll-wrapper d-flex flex-column" style="border: 1px solid black;">
+                    <div class="row flex-fill" style="border: 1px solid black;">
+                        <div class="col-12 p-0 scroll-col">
+                            <div class="px-2 py-1 test-content">Calender
+                                   
+                                            <div id="content"></div>
+                                                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-fill" style="border: 1px solid black;">
+                        <div class="col-12 p-0 scroll-col">
+                            <div class="px-2 py-1 test-content">NEPSE value</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small pt-4" style="background-color: rgb(37, 63, 83)">
+            <div class="container text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h5 class="text-uppercase"> </h5>
+                        <!-- <p>Here you can use rows and columns to organize your footer content.</p> -->
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none pb-3" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Team</h5>
+                        <ul class="list-unstyled">
+                            <li>Dharatee Shree Shrestha</li>
+                            <li>Ojesh Manandhar</li>
+                            <li>Samip Shrestha</li>
+                            <li>Shreyanshu Kunwar</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Social</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="#!">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#!">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#!">Twiter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="footer-copyright">
+                            <div class="container" align="center">
+                                Copyright &copy; 2019 <a href="#">Pyama</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+   <!-- Bootstrap JS links -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+		<script type="text/javascript" src="{% static 'js/js.js' %} "></script>
+		<script type="text/javascript" src="{% static 'js/calendar.js' %}"></script>
+
+
+{% endblock %}     
+
+        
+

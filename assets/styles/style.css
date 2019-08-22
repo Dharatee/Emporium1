@@ -1,0 +1,117 @@
+nav {
+    background-color: rgb(38, 65, 85);
+ }
+
+#footer {
+    background-color: rgb(37, 63, 83);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #66f;
+    text-decoration: none;
+}
+
+.test-content {
+    height: 100%;
+    background-image: linear-gradient(red, blue);
+}
+
+/* .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    /* color: white; */
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show { */
+    display: block;
+  }
+
+/*---Media Queries --*/
+/* Small (sm) and Extra-small (xs) devices (phones, 768px and down) */
+/* @media (max-width: 768px) {
+    .col-calender {
+        order: 2;
+    }
+    .col-graph {
+        order: 1;
+    }
+} */
+
+/* Medium (md) devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* .col-calender {
+        order: 1;
+    }
+    .col-graph {
+        order: 2;
+    } */
+
+    .scroll-wrapper {
+        position: relative;
+        height: 85vh;
+    }
+
+    .scroll-col {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #264155;
+    border-radius: 0;
+}

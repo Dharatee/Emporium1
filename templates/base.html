@@ -1,0 +1,104 @@
+
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- <title>Emporium</title> -->
+
+        <title>Emporium</title>
+        <link rel="icon" href="{% static 'image/logo1.png' %}">
+
+        <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="{% static 'styles/materialize.min.css' %}">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified JavaScript -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+        
+
+        <!-- Bootstrap CSS link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Custom CSS link -->
+        <link href="{% static 'styles/style.css' %}" rel="stylesheet" type="text/css">  
+    </head>
+
+    <body> 
+        <!-- NavBar -->
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top sticky-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="{% static 'image/logo1.png' %}" width="60" height="55" class="d-inline-block align-center" alt="Emporium">
+                        Emporium
+                    </a>
+
+                    
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item px-2 ">
+                                <a class="nav-link d-flex" href="#">
+                                    <i class="material-icons mr-1">home</i>Home
+                                </a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link d-flex" href="help.html">
+                                    <i class="material-icons mr-1">help</i>Help
+                                </a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link d-flex" href="about.html">
+                                    <i class="material-icons mr-1">group</i>About
+                                </a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link d-flex" href="contact.html">
+                                    <i class="material-icons mr-1">local_phone</i>Contact
+                                </a>
+                            </li>
+
+                            <!--
+                            
+                            <li class="nav-item px-2">
+                                <a class="nav-link d-flex" href="accounts/logout">
+                                    <i class="material-icons mr-1">account_circle</i> Logout
+                                </a>
+                            </li>
+                            
+                            
+                            <li class="nav-item px-2">
+                                <a  class="nav-link d-flex" href="accounts/register">
+                                    <i class="material-icons mr-1">input</i>Register
+                                </a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link d-flex" href="accounts/login">
+                                    <i class="material-icons mr-1">account_circle</i>Login
+                                </a>
+                            </li>
+                             -->
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+       
+
+        {% block content %}
+       
+
+
+{% endblock %}
