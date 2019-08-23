@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Emporium Team</title>
+
+        <!-- Bootstrap CSS link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- MD Bootstrap -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+        <!-- Custom CSS link -->
+        <link href="{% static 'styles/css.css" rel="stylesheet" type="text/css">
+        <link href="{% static 'styles/about.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        
+        <!-- Content -->
+        <!-- About Emporium -->
+        <div class="container text-center my-3 about-emporium">
+            <div class="row w-75 mx-auto heading">
+                <div class="col-12 mb-0 pb-0">
+                    <h1 class="display-4">About Emporium</h1>
+                </div>
+                <hr />
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, possimus!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptate quibusdam! 
+                    Quae incidunt voluptates explicabo soluta ad dolorum voluptatem? Officiis.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- Meet the team -->
+        <div class="container text-center p-0 my-3 meet-the-team">
+            <div class="row w-75 mx-auto heading">
+                <div class="col-12 mb-0 pb-0">
+                    <h1 class="display-4">Meet the team</h1>
+                </div>
+                <hr />
+            </div>
+            <div class="row p-0 m-0">
+                <div class="col-12 col-md-6">
+                    <!-- <div class="card bg-light border-primary col-w-300 mx-auto my-3"> -->
+                    <div class="card bg-light mx-auto my-3 col-w-300">
+                    <!-- <div class="card border-primary col-w-300 mx-auto my-3"> -->
+                    <!-- <div class="card text-centercol-w-300 mx-auto my-3"> -->
+                        <img class="card-img-top card-image card-image" src="{% static 'image/team/dharatee.jpg' %}" alt="Dharatee">
+                        <div class="card-body mt-0 pt-0">
+                            <h5 class="card-title">Dharatee Shree Shrestha</h5>
+                            <p class="card-text">
+                                Currently in her 3<sup>rd</sup> year of pursuing Bachelor's degree in Computer Engineering from 
+                                Kathford International College of Engineering and Management.
+                                <br /> <br />
+                                Working in the field of Artificial Intelligence, focused in Machine Learning and 
+                                Natural Language Processing, she also has skills in web development and content writing.
+                            </p>
+                            <a href="#">
+                                <i class="fab fa-linkedin fa-2x mx-2" style="color:#007bb5"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-facebook-square fa-2x mx-2" style="color: #3c5a99"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter fa-2x mx-2" style="color: #55acee"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github fa-2x mx-2" style="color: #000000"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="w-100 d-block d-md-none"></div> -->
+
+                <div class="col-12 col-md-6">
+                    <div class="card bg-light mx-auto my-3 col-w-300">
+                        <img class="card-img-top card-image" src="{% static 'image/team/ojesh.jpg' %}" alt="Ojesh">
+                        <div class="card-body mt-0 pt-0">
+                            <h5 class="card-title">Ojesh Manandhar</h5>
+                            <p class="card-text">
+                                Currently in 3<sup>rd</sup> year of his Bachelor's degree in Computer Engineering at Kathmandu Engineering College.
+                                <br /> <br />
+                                He is passionate about learning DBMS, creating web-apps, websites and multi-platform mobile/desktop applications.
+                            </p>
+                            <a href="#">
+                                <i class="fab fa-linkedin fa-2x mx-2" style="color:#007bb5"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-facebook-square fa-2x mx-2" style="color: #3c5a99"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter fa-2x mx-2" style="color: #55acee"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github fa-2x mx-2" style="color: #000000"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="w-100"></div> -->
+
+                <div class="col-12 col-md-6">
+                    <div class="card bg-light mx-auto my-3 col-w-300">
+                        <img class="card-img-top card-image" src="{% static 'image/team/samip.jpg' %}" alt="Samip">
+                        <div class="card-body">
+                            <h5 class="card-title">Samip Shrestha</h5>
+                            <p class="card-text">
+                                Currently in the 3<sup>rd</sup> year of Bachelor's degree in Computer Engineering from Kathmandu Engineering College.
+                                <br /> <br />
+                                His interest lies in Machine learning, artificial intelligence and creating desktop and mobile applications.
+                            </p>
+                            <a href="#">
+                                <i class="fab fa-linkedin fa-2x mx-2" style="color:#007bb5"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-facebook-square fa-2x mx-2" style="color: #3c5a99"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter fa-2x mx-2" style="color: #55acee"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github fa-2x mx-2" style="color: #000000"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="w-100 d-block d-md-none"></div> -->
+                
+                <div class="col-12 col-md-6">
+                    <div class="card bg-light mx-auto my-3 col-w-300">
+                        <img class="card-img-top card-image" src="{% static 'image/team/shreyanshu.jpg' %}" alt="Shreyanshu">
+                        <div class="card-body">
+                            <h5 class="card-title">Shreyanshu D. Kunwar</h5>
+                            <p class="card-text">KEC</p>
+                            <a href="#">
+                                <i class="fab fa-linkedin fa-2x mx-2" style="color:#007bb5"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-facebook-square fa-2x mx-2" style="color: #3c5a99"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter fa-2x mx-2" style="color: #55acee"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github fa-2x mx-2" style="color: #000000"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small pt-4">
+            <div class="container text-md-left">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h5 class="text-uppercase">Company Bio</h5>
+                        <p>We help you make analysis for your stock investment.</p>
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none pb-3" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Team</h5>
+                        <ul class="list-unstyled">
+                            <li>Dharatee Shree Shrestha</li>
+                            <li>Ojesh Manandhar</li>
+                            <li>Samip Shrestha</li>
+                            <li>Shreyanshu Kunwar</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Social</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="#!">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#!">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#!">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS links -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- Custom JS -->
+		<script type="text/javascript" src="{% static 'js/js.js' %}"></script>
+    </body>
+</html>
+
+{% endblock %}  

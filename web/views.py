@@ -7,3 +7,6 @@ def index(request):
     if dictionary:    
         analyse(dictionary['Date'])
     return render(request, "index.html")
+
+def about(request):
+    return render(request, "about.html")
