@@ -1,13 +1,13 @@
 .calendar-container {
-  width: 300px;
+  width: 250px;
   border: 1px solid black;
   border-radius: 15px 15px 10px 10px;
   padding: 0px;
-  margin: 0px;
+  margin: 0px auto;
   cursor: pointer;
 }
 
-.month-year {
+#month-year {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,28 +16,32 @@
 
   background-color: #e9eaf0;
   color: #4c5373;
-  font: 300 28px "Open Sans";
+  font: 300 20px "Open Sans";
   text-transform: uppercase;
 }
 
-.month-year * {
+#month-year * {
   text-align: center;
   /* border: 1px solid red; */
 }
 
-.month-year .cur-month {
+#month-year .prev-month:hover,
+#month-year .next-month:hover {
+  color: #ff8263;
+}
+
+#month-year .cur-month {
   flex-grow: 1;
 }
 
-.calendar-table {
+#calendar-table {
   /* height: 250px; */
-  width: 300px;
+  width: 250px;
   text-align: center;
-  font: 16px "Open Sans";
+  font: 13px "Open Sans";
   padding: 0px;
   margin: 0px;
-  /* for tr border un-comment this */
-  /* border-collapse: collapse; */
+  border-collapse: separate;
   /* border: 1px solid black; */
   border-spacing: 5px;
 }
@@ -45,7 +49,7 @@
 /* border dosnet work if border-collapse: collapse is not set in <table> */
 tr {
   /* border: 1px solid red; */
-  height: 35px;
+  height: 30px;
 }
 
 .weekdays {
@@ -55,6 +59,7 @@ tr {
 }
 
 .day td {
+  /* width: parent-width(=200 = 100%)/7 i.e. 100%/7 = 14.28%*/
   width: 14.28% !important;
   color: #4c5373;
   box-shadow: inset 0 0 1px 1px #d9dce5;
@@ -77,4 +82,43 @@ tr {
   color: #fff;
   box-shadow: inset 0 0 1px 1px #ff8263, 0 1px 3px -1px #ff8263;
   background: #ff8263;
+}
+
+.no-news b {
+  color: blue;
+}
+
+.news-single {
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.news-single:first-child {
+  padding-top: 0px;
+}
+
+.news-single:last-child {
+  border: none;
+  padding-bottom: 0px;
+}
+
+.news-single-active {
+  background: #f6f6f675;
+}
+
+.news-single .date {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.main-news-inactive {
+  display: none;
+}
+
+.main-news-active {
+  display: block;
+  font-size: 13px;
 }
