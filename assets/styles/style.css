@@ -12,6 +12,7 @@ nav {
     background-color: #264155;
 }
 
+
 footer {
     background-color: #264155;
     color: #fff;
@@ -24,6 +25,13 @@ footer a {
 footer a:hover {
     color: #66f;
     text-decoration: none;
+}
+
+.tdStyle
+{
+background-image:url({% static 'image/home_slider.png' %});
+background-repeat:no-repeat;
+background-size:100%;
 }
 
 .card {
