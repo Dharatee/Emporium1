@@ -5,6 +5,7 @@
 
 
 <link href="{% static 'styles/style.css' %}" rel="stylesheet" type="text/css">  
+<link href="{% static 'styles/index.css' %}" rel="stylesheet" type="text/css">  
 <!-- Home -->
 
 
@@ -50,8 +51,8 @@
 
           <!-- Content -->
           <div class="container my-2" style="border: 1px solid black;">
-            <div class="row d-flex align-items-stretch scroll-wrapper" style="border: 1px solid black;"> 
-                <div class="col-md-8 col-sm-12 order-md-2 p-0 scroll-col" style="border: 1px solid black;">
+            <div class="row d-flex align-items-stretch scroll-wrapper" style="border: 1px solid gray;"> 
+                <div class="col-md-8 col-sm-12 order-md-2 p-0 scroll-col" style="border: 1px solid gray;">
                     <div class="px-2 py-1  ">Graph
                         <form method="POST" action=".">{%csrf_token%}
                             <input type="text" name="Date" placeholder="Input Date (AD)">
@@ -71,22 +72,22 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 order-md-1 scroll-wrapper d-flex flex-column" style="border: 1px solid black;">
-                    <div class="row flex-fill" style="border: 1px solid black;">
+                    <div class="row flex-fill" style="border: 1px solid gray;">
                         <div class="col-12 p-0 scroll-col">
-                            <div class="px-2 py-1  ">Calender
-                                <img src="{% static 'image/index.png' %}" height="98%" width="98%">
+                            <div class="px-2 py-1  "><h3>Index</h3><br>
+                                <img src="{% static 'image/index.png' %}" height="75%" width="98%">
                             </div>
                         </div>
                     </div>
-                    <div class="row flex-fill" style="border: 1px solid black;">
+                    <div class="row flex-fill" style="border: 1px solid gray;">
                         <div class="col-12 p-0 scroll-col">
                             <div class="px-2 py-1  "><h3>News</h3><br>
                                 <ol type="1">
                                     <li>2019-07-24: Nabil Bank inaugurates new ATM at Lalitpur Metropolitan Office, "Aggressive debenture issue is giving opportunity to increase the business, but diminishing the dividend distribution capacity of Bank.</li><br>
                                     <li>2019-07-23: Nabil Bank inaugurates new ATM at Lalitpur Metropolitan Office, "Nepal Rastra Bank publishes 11 months report for commercial banks; find out which bank stands where.</li><br>
                                     <li>2019-07-22: Nabil Bank inaugurates new ATM at Lalitpur Metropolitan Office, "Nabil Bank conducts Blood donation program; 122 staff member donated blood to commemorate bank�s 35th anniversary.</li><br>
-                                    <li>2019-07-19: Nabil Bank inaugurates new ATM at Lalitpur Metropolitan Office, "Look at the detailed overview and past performance of one of the leading commercial banks: Nabil Bank Limited"</li><br>
-                                    <li>2019-07-17: Nabil Bank inaugurates new ATM at Lalitpur Metropolitan Office, "11.20 crore units of Nabil Balance Fund 2 has been listed on NEPSE for trading</li><br>
+                                    <!-- <li>2019-07-19: Nabil Bank inaugurates new ATM at Lalitpur Metropolitan Office, "Look at the detailed overview and past performance of one of the leading commercial banks: Nabil Bank Limited"</li><br> -->
+                                    <!-- <li>2019-07-17: Nabil Bank inaugurates new ATM at Lalitpur Metropolitan Office, "11.20 crore units of Nabil Balance Fund 2 has been listed on NEPSE for trading</li><br> -->
 
                                 </ol>
                             </div>
@@ -148,14 +149,13 @@
             </div>
         </footer>
 
+        <img id="bg-image" src="./../static/image/1.png">
+
    <!-- Bootstrap JS links -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-   <body id="bg" style="background-image: url('{% static "image/home_slider.png" %}')">
-   </body>
 {% endblock %}     
 
         

@@ -28,14 +28,14 @@ footer a:hover {
     text-decoration: none;
 }
 
-#bg{
-    background-size: 1800px 900px;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    opacity: 0.5;
-    filter: blur(1px);
-   -webkit-filter: blur(1px);
+#bg-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
 }
 
 .card {
